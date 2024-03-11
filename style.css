@@ -19,7 +19,7 @@ body {
   font-style: normal;
 }
 .container {
-  width: 100%;
+  justify-content: center;
 }
 .wrapper {
   padding-top: 30px;
@@ -104,9 +104,6 @@ body {
   margin: 74px auto 61px;
   display: flex;
   justify-content: center;
-}
-.features {
-  margin: 0 auto;
 }
 .service-title,
 .feature-title {
@@ -209,9 +206,6 @@ body {
   width: 100px;
   height: 100px;
 }
-.services {
-  margin: 0 auto;
-}
 .service-title {
   margin-bottom: 80px;
 }
@@ -223,7 +217,6 @@ body {
 }
 .service-card-container {
   display: flex;
-  margin: 0 auto;
   justify-content: center;
   gap: 18px;
 }
@@ -299,4 +292,61 @@ body {
 }
 .service-card-3 {
   background-color: #fff3ea;
+}
+.strategy {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+}
+.strategy-slogan {
+  width: 250px;
+  font-size: 14px;
+  color: #e29578;
+  background-color: #fff3ea;
+  padding: 14px 28px;
+  border-radius: 50px;
+  margin-bottom: 22px;
+}
+.strategy-heading {
+  width: 650px;
+  font-size: 56px;
+  line-height: 64px;
+  color: #101828;
+  margin-bottom: 22px;
+}
+.strategy-desc {
+  width: 680px;
+  font-size: 24px;
+  line-height: 32px;
+  font-family: "Noto Sans", sans-serif;
+  color: #475467;
+  margin-bottom: 50px;
+}
+.strategy-advantages {
+  display: grid;
+  grid-template-columns: 320px 320px;
+  column-gap: 70px;
+  row-gap: 35px;
+  margin-top: 35px;
+}
+.strategy-info {
+  margin-left: 50px;
+}
+.advantage-heading1,
+.advantage-heading2,
+.advantage-heading3,
+.advantage-heading4 {
+  display: flex;
+}
+.advantage-desc1,
+.advantage-desc2,
+.advantage-desc3,
+.advantage-desc4 {
+  display: grid;
+  width: 330px;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "Noto Sans", sans-serif;
+  color: #475467;
+  margin-top: 20px;
 }
