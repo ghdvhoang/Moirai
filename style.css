@@ -10,7 +10,6 @@ img {
 a {
   text-decoration: none;
   color: #101828;
-  font-weight: 400;
 }
 body {
   font-family: "Chivo", sans-serif;
@@ -19,16 +18,18 @@ body {
   font-style: normal;
 }
 .container {
-  justify-content: center;
-}
-.wrapper {
-  padding-top: 30px;
+  max-width: 1480px;
+  width: 1480px;
   margin: 0 auto;
-  max-width: 1150px;
+}
+.header {
+  width: 80%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
+  padding-top: 30px;
 }
 .header-menu {
   display: flex;
@@ -46,25 +47,28 @@ body {
   cursor: pointer;
 }
 .banner-wrapper {
-  max-width: 100%;
+  width: 1480px;
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: #faede3;
-  margin-top: 20px;
+  margin: 30px 0;
   position: relative;
 }
 .banner-info {
-  width: 50%;
-  margin-left: 200px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .banner-heading {
-  font-size: 70px;
+  font-size: 60px;
   line-height: 80px;
   padding-bottom: 20px;
   color: #000000;
 }
 .banner-desc {
-  width: 610px;
+  width: 600px;
   height: 100px;
   font-family: "Noto Sans", sans-serif;
   font-size: 24px;
@@ -89,21 +93,26 @@ body {
   color: #006d77;
 }
 .banner-pattern-left {
-  width: 120px;
+  width: 60px;
   position: absolute;
   bottom: -61px;
 }
 .banner-pattern-right {
   position: absolute;
-  width: 120px;
+  width: 60px;
   position: absolute;
   top: -61px;
   right: 0px;
 }
 .brands-frame {
+  width: 80%;
   margin: 74px auto 61px;
   display: flex;
   justify-content: center;
+}
+.features {
+  width: 80%;
+  margin: 0 auto;
 }
 .service-title,
 .feature-title {
@@ -147,7 +156,6 @@ body {
   border-radius: 50px;
   background-color: #f2f4f7;
   color: #475467;
-  font-weight: 400;
   line-height: 14px;
 }
 .active {
@@ -159,6 +167,7 @@ body {
   width: 1230px;
   display: flex;
   background-color: #fff3ea;
+  justify-content: center;
   align-items: center;
   margin: 60px auto 120px;
   padding-left: 90px;
@@ -192,7 +201,6 @@ body {
   flex-direction: row;
   gap: 10px;
   font-size: 14px;
-  font-weight: 400;
   line-height: 14px;
   background-color: #ffffff;
   cursor: pointer;
@@ -205,6 +213,10 @@ body {
   margin-left: 525px;
   width: 100px;
   height: 100px;
+}
+.services {
+  width: 80%;
+  margin: 0 auto;
 }
 .service-title {
   margin-bottom: 80px;
@@ -294,9 +306,14 @@ body {
   background-color: #fff3ea;
 }
 .strategy {
+  width: 80%;
   display: flex;
   justify-content: center;
-  margin-top: 150px;
+  margin: 150px auto 0;
+}
+.strategy-image {
+  width: 60%;
+  height: auto;
 }
 .strategy-slogan {
   width: 250px;
@@ -330,6 +347,7 @@ body {
   margin-top: 35px;
 }
 .strategy-info {
+  width: 40%;
   margin-left: 50px;
 }
 .advantage-heading1,
