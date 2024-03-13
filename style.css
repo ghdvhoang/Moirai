@@ -18,12 +18,12 @@ body {
   font-style: normal;
 }
 .container {
-  max-width: 1480px;
-  width: 1480px;
+  /* max-width: 1480px;
+  width: 1480px; xoá width ở container  */
   margin: 0 auto;
 }
 .header {
-  width: 80%;
+  max-width: 1150px; /* xem thử width của header ở figma bao nhiêu width thì set cho nó*/
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -47,7 +47,6 @@ body {
   cursor: pointer;
 }
 .banner-wrapper {
-  width: 1480px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -56,11 +55,16 @@ body {
   position: relative;
 }
 .banner-info {
-  width: 60%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
+.banner-image {
+  max-width: 500px; /* set width cho hình ảnh */
+}
+
 .banner-heading {
   font-size: 60px;
   line-height: 80px;
@@ -111,17 +115,21 @@ body {
   justify-content: center;
 }
 .features {
-  width: 80%;
+  width: 1234px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
+  margin-bottom: 50px;
 }
 .service-title,
 .feature-title {
-  width: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin: 120px auto 77px;
+  margin-bottom: 30px;
 }
 .service-heading,
 .feature-heading {
@@ -164,17 +172,15 @@ body {
   background-color: #ffffff;
 }
 .feature-tab-content {
-  width: 1230px;
+  margin-top: 30px;
   display: flex;
   background-color: #fff3ea;
   justify-content: center;
   align-items: center;
-  margin: 60px auto 120px;
-  padding-left: 90px;
-  position: relative;
 }
 .feature-content {
   width: 50%;
+  padding: 50px
 }
 
 .f-content-heading {
@@ -207,15 +213,17 @@ body {
 }
 .feature-image {
   width: 50%;
+  position: relative;
 }
 .feature-play-btn {
   position: absolute;
-  margin-left: 525px;
+  top: 40%;
+  left: 40%; /* căn giữa */
   width: 100px;
   height: 100px;
 }
 .services {
-  width: 80%;
+  width: 1234px;
   margin: 0 auto;
 }
 .service-title {
@@ -235,24 +243,22 @@ body {
 .service-card-1,
 .service-card-2,
 .service-card-3 {
-  width: 420px;
+  max-width: 458px;
   display: flex;
   flex-direction: column;
   border-radius: 16px;
-  padding: 53px 0 0 40px;
   position: relative;
+  padding: 30px;
 }
 .service-heading-c1,
 .service-heading-c2,
 .service-heading-c3 {
-  width: 380px;
   font-size: 35px;
   padding-top: 30px;
 }
 .service-desc-c1,
 .service-desc-c2,
 .service-desc-c3 {
-  width: 350px;
   font-size: 18px;
   line-height: 26px;
   font-family: "Noto Sans", sans-serif;
@@ -268,7 +274,6 @@ body {
   flex-direction: row;
   gap: 6px;
   align-items: center;
-  margin-bottom: 55px;
   padding: 20px 20px;
   background-color: #ffffff;
   border-radius: 50px;
@@ -306,14 +311,14 @@ body {
   background-color: #fff3ea;
 }
 .strategy {
-  width: 80%;
   display: flex;
   justify-content: center;
-  margin: 150px auto 0;
+  align-items: center;
+  margin: 120px auto;
+  max-width: 1234px;
 }
 .strategy-image {
-  width: 60%;
-  height: auto;
+  width: 637px;
 }
 .strategy-slogan {
   width: 250px;
@@ -325,14 +330,12 @@ body {
   margin-bottom: 22px;
 }
 .strategy-heading {
-  width: 650px;
   font-size: 56px;
   line-height: 64px;
   color: #101828;
   margin-bottom: 22px;
 }
 .strategy-desc {
-  width: 680px;
   font-size: 24px;
   line-height: 32px;
   font-family: "Noto Sans", sans-serif;
@@ -347,7 +350,7 @@ body {
   margin-top: 35px;
 }
 .strategy-info {
-  width: 40%;
+  width: 50%;
   margin-left: 50px;
 }
 .advantage-heading1,
@@ -356,12 +359,16 @@ body {
 .advantage-heading4 {
   display: flex;
 }
+
+.advantage-title img{
+   margin-right: 20px;
+}
+
 .advantage-desc1,
 .advantage-desc2,
 .advantage-desc3,
 .advantage-desc4 {
   display: grid;
-  width: 330px;
   font-size: 18px;
   line-height: 26px;
   font-family: "Noto Sans", sans-serif;
