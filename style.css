@@ -23,7 +23,7 @@ body {
   margin: 0 auto;
 }
 .header {
-  width: 80%;
+  max-width: 1280px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -47,7 +47,6 @@ body {
   cursor: pointer;
 }
 .banner-wrapper {
-  width: 1480px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -56,12 +55,16 @@ body {
   position: relative;
 }
 .banner-info {
-  width: 60%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+.banner-image {
+  max-width: 500px;
+}
 .banner-heading {
+  width: 645px;
   font-size: 60px;
   line-height: 80px;
   padding-bottom: 20px;
@@ -89,39 +92,52 @@ body {
   border-radius: 50px;
   cursor: pointer;
 }
+.button-learn-more {
+  font-weight: 600;
+}
 .banner-sub-h1 {
   color: #006d77;
+}
+.banner-play {
+  cursor: pointer;
+  width: 160px;
+  position: absolute;
+  top: 58%;
+  right: 33%;
 }
 .banner-pattern-left {
   width: 60px;
   position: absolute;
-  bottom: -61px;
+  bottom: -6%;
+  left: 0%;
 }
 .banner-pattern-right {
   position: absolute;
-  width: 60px;
-  position: absolute;
-  top: -61px;
-  right: 0px;
+  width: 90px;
+  right: 0%;
+  top: -8%;
 }
 .brands-frame {
-  width: 80%;
   margin: 74px auto 61px;
   display: flex;
   justify-content: center;
 }
 .features {
-  width: 80%;
+  width: 1234px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
+  margin-bottom: 50px;
 }
 .service-title,
 .feature-title {
-  width: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin: 120px auto 77px;
+  margin-bottom: 30px;
 }
 .service-heading,
 .feature-heading {
@@ -158,25 +174,22 @@ body {
   color: #475467;
   line-height: 14px;
 }
-.active {
+.active:hover {
   color: #006d77;
   border: 2px solid #006d77;
   background-color: #ffffff;
 }
 .feature-tab-content {
-  width: 1230px;
+  margin-top: 30px;
   display: flex;
   background-color: #fff3ea;
   justify-content: center;
   align-items: center;
-  margin: 60px auto 120px;
-  padding-left: 90px;
-  position: relative;
 }
 .feature-content {
   width: 50%;
+  padding: 50px;
 }
-
 .f-content-heading {
   width: 450px;
   font-size: 42px;
@@ -184,7 +197,6 @@ body {
   color: #000000;
   margin-bottom: 30px;
 }
-
 .f-content-des {
   width: 490px;
   font-size: 18px;
@@ -207,15 +219,18 @@ body {
 }
 .feature-image {
   width: 50%;
+  position: relative;
 }
 .feature-play-btn {
   position: absolute;
-  margin-left: 525px;
+  top: 42%;
+  left: -7%;
   width: 100px;
   height: 100px;
+  cursor: pointer;
 }
 .services {
-  width: 80%;
+  width: 1234px;
   margin: 0 auto;
 }
 .service-title {
@@ -229,30 +244,27 @@ body {
 }
 .service-card-container {
   display: flex;
-  justify-content: center;
   gap: 18px;
 }
 .service-card-1,
 .service-card-2,
 .service-card-3 {
-  width: 420px;
+  max-width: 458px;
   display: flex;
   flex-direction: column;
   border-radius: 16px;
-  padding: 53px 0 0 40px;
+  padding: 30px;
   position: relative;
 }
 .service-heading-c1,
 .service-heading-c2,
 .service-heading-c3 {
-  width: 380px;
   font-size: 35px;
   padding-top: 30px;
 }
 .service-desc-c1,
 .service-desc-c2,
 .service-desc-c3 {
-  width: 350px;
   font-size: 18px;
   line-height: 26px;
   font-family: "Noto Sans", sans-serif;
@@ -268,7 +280,6 @@ body {
   flex-direction: row;
   gap: 6px;
   align-items: center;
-  margin-bottom: 55px;
   padding: 20px 20px;
   background-color: #ffffff;
   border-radius: 50px;
@@ -278,22 +289,22 @@ body {
   width: 144px;
   height: 144px;
   position: absolute;
-  margin-left: 265px;
-  margin-top: 349px;
+  left: 71%;
+  bottom: -7%;
 }
 .service-map {
   width: 113px;
   height: 113px;
   position: absolute;
-  margin-left: 280px;
-  margin-top: 366px;
+  left: 75%;
+  bottom: -5%;
 }
 .service-pinetree {
   width: 135px;
   height: 135px;
   position: absolute;
-  margin-left: 255px;
-  margin-top: 349px;
+  left: 70%;
+  bottom: -5%;
 }
 /* background */
 .service-card-1 {
@@ -306,14 +317,14 @@ body {
   background-color: #fff3ea;
 }
 .strategy {
-  width: 80%;
   display: flex;
   justify-content: center;
-  margin: 150px auto 0;
+  align-items: center;
+  margin: 120px auto;
+  max-width: 1234px;
 }
 .strategy-image {
-  width: 60%;
-  height: auto;
+  width: 567px;
 }
 .strategy-slogan {
   width: 250px;
@@ -322,32 +333,29 @@ body {
   background-color: #fff3ea;
   padding: 14px 28px;
   border-radius: 50px;
-  margin-bottom: 22px;
 }
 .strategy-heading {
-  width: 650px;
-  font-size: 56px;
+  font-size: 50px;
   line-height: 64px;
   color: #101828;
-  margin-bottom: 22px;
+  margin: 22px 0;
 }
 .strategy-desc {
-  width: 680px;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 32px;
   font-family: "Noto Sans", sans-serif;
   color: #475467;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 .strategy-advantages {
   display: grid;
-  grid-template-columns: 320px 320px;
-  column-gap: 50px;
-  row-gap: 35px;
+  grid-template-columns: 300px 300px;
+  column-gap: 60px;
+  row-gap: 30px;
   margin-top: 35px;
 }
 .strategy-info {
-  width: 40%;
+  width: 50%;
   margin-left: 50px;
 }
 .advantage-heading1,
@@ -356,15 +364,19 @@ body {
 .advantage-heading4 {
   display: flex;
 }
+.strategy-feather {
+  font-size: 18px;
+}
+.advantage-title img {
+  margin-right: 20px;
+}
 .advantage-desc1,
 .advantage-desc2,
 .advantage-desc3,
 .advantage-desc4 {
   display: grid;
-  width: 330px;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 26px;
   font-family: "Noto Sans", sans-serif;
   color: #475467;
-  margin-top: 20px;
 }
